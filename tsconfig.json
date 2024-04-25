@@ -1,0 +1,16 @@
+{
+    // sendo as configurações de compilçação
+    "compilerOptions": {
+      // qual o diretório que irá considerar depois de ler os arquivos ts e onde eu vou gravar os arquivos resultantes
+      "outDir": "dist/js",
+      "target": "ES6", // dizendo para qual versão eu quero que convereta
+      "noEmitOnError": true, // isso significa que ele não irá compilar um arquivo TS para JS se houver qualquer tipo de erro
+      "noImplicitAny": true,
+      "removeComments": true, // ao compilar os comentários feitos não estaram no arquivo compilado
+      "strictNullChecks": true // ele sempre irá verificar se o paramtro passado no querySelector é valido ou null
+    },
+    // assim dizendo para que ele leia os arquivos "inclua" todos suas pastas e subpastas para depois jogar na pasta "dist/js" definido acima
+    "include": [
+      "app/**/*",
+    ]
+  }
